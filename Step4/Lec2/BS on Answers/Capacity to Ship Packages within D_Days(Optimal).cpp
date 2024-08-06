@@ -1,4 +1,4 @@
-//Brute-
+//Optimal-
 #include<bits/stdc++.h>
 int findmax(vector<int>& weights){
     int n = weights.size();
