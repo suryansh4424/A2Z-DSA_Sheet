@@ -41,6 +41,7 @@ void printLL(Node* head) {
     }
 }
 
+//CODE FOR HEAD DELETION
 Node* deletingHead(Node* head){
   if(head == NULL) return head;
   Node* temp = head;
