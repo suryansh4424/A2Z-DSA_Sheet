@@ -19,6 +19,21 @@ public:
     }
 };
 
+Node* constructLL(vector<int> &arr) {
+    if (arr.empty()) return nullptr;
+
+    Node *head = new Node(arr[0]);
+    Node *mover = head;
+
+    for (int i = 1; i < arr.size(); i++) {
+        Node* temp = new Node(arr[i]);
+        mover->next = temp;
+        mover = temp;
+    }
+
+    return head;
+}
+
 void printLL(Node* head) {
     while (head != NULL) {
         cout << head->data << " ";
@@ -36,8 +51,8 @@ Node* deletingHead(Node* head){
 
 int main() {
     vector<int> arr = {12, 5, 8, 7};
-    Node* head = convertLL(arr);
-    head = deletinghead(head);
+    Node* head = constructLL(arr);
+    head = deletingHead(head);
     printLL(head);
 
     return 0;
