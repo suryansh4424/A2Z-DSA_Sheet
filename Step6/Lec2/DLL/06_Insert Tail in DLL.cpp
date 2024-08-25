@@ -43,7 +43,18 @@ void printLL(Node* head){
     }
 }
 
+Node* insertHead(Node* head, int val){
+    Node* temp = new Node(val);
+    temp->back = nullptr;
+    temp->next = head;
+    head->back = temp;
+    return temp;
+}
+
 Node* insertTail(Node* head, int val){
+    if(head->next == NULL){
+        return insertHead(head, val);
+    }
     Node* tail = new Node(val);
     Node* temp = head;
     while(temp->next != NULL){
