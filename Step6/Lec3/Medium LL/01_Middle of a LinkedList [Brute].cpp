@@ -1,3 +1,4 @@
+//TC = O(N+N/2)
 Node *findMiddle(Node *head) {
     if (head == NULL || head->next == NULL) {
         return head;
