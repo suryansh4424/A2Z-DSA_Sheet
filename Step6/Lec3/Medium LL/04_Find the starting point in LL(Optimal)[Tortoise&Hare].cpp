@@ -1,3 +1,4 @@
+//
 Node *firstNode(Node *head) {
     Node* slow = head;
     Node* fast = head;
