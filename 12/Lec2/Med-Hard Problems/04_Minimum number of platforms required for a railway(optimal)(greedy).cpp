@@ -22,3 +22,6 @@ int calculateMinPatforms(int at[], int dt[], int n) {
     
     return max_platforms;
 }
+
+
+link = "https://www.naukri.com/code360/problems/minimum-number-of-platforms_799400?leftPanelTabValue=SUBMISSION"
