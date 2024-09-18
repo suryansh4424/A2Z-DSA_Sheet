@@ -17,7 +17,7 @@ int calculateMinPatforms(int at[], int dt[], int n) {
             platform_needed--;
             j++;
         }
-        max_platforms = std::max(max_platforms, platform_needed);
+        max_platforms = max(max_platforms, platform_needed);
     }
     
     return max_platforms;
