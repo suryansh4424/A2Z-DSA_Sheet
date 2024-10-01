@@ -8,5 +8,5 @@ void pre(TreeNode<int> * root , vector<int>&ans){
 vector<int> preOrder(TreeNode<int> * root){
     vector<int> ans ;
     pre(root , ans);
-    return ans ;
+    return ans;
 }
