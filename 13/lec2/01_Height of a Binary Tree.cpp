@@ -1,12 +1,9 @@
-void pre(TreeNode<int> * root , vector<int>&ans){
-    if(root == NULL) return; 
-    ans.push_back(root->data);
-    pre(root->left , ans);
-    pre(root->right, ans);
-}
+int findMaxDepth(TreeNode<int> *root) 
+{
+	//Write your code here. 
+    if (root==NULL) return 0;
+    int lh = findMaxDepth(root->left);
+    int rh = findMaxDepth(root->right);
 
-vector<int> preOrder(TreeNode<int> * root){
-    vector<int> ans ;
-    pre(root , ans);
-    return ans;
+    return 1 + max(lh,rh);
 }
