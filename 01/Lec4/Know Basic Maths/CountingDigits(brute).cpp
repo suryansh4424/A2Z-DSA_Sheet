@@ -17,4 +17,4 @@ int main() {
     int digits = countDigits(N);
     cout << "Number of Digits in N: "<< digits << endl;
     return 0;
-}
+} 
